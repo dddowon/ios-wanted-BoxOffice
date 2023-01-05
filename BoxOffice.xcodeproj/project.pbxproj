@@ -19,6 +19,13 @@
 		AAAEB9732963F89A007E13BF /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB9722963F89A007E13BF /* Genres.swift */; };
 		AAAEB9752963F8BD007E13BF /* Audits.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB9742963F8BD007E13BF /* Audits.swift */; };
 		AAAEB97729640563007E13BF /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB97629640563007E13BF /* DateManager.swift */; };
+		FB8D93EF29653FED0045E298 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D93EE29653FED0045E298 /* ReviewViewController.swift */; };
+		FB8D93F129654B750045E298 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB8D93F029654B750045E298 /* GoogleService-Info.plist */; };
+		FB8D93F429654EC80045E298 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FB8D93F329654EC80045E298 /* FirebaseFirestore */; };
+		FB8D93F629654EC80045E298 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB8D93F529654EC80045E298 /* FirebaseFirestoreSwift */; };
+		FB8D93F8296558930045E298 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D93F7296558930045E298 /* Review.swift */; };
+		FB8D93FA296568F70045E298 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D93F9296568F70045E298 /* BaseView.swift */; };
+		FB8D93FC296569300045E298 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D93FB296569300045E298 /* RateView.swift */; };
 		FBC2EDB82963EC58009F21C9 /* FilmDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2EDB72963EC58009F21C9 /* FilmDetails.swift */; };
 		FBC2EDBA2963EE26009F21C9 /* PeopleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2EDB92963EE26009F21C9 /* PeopleName.swift */; };
 		FBC2EDBC2963F9AD009F21C9 /* FilmPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2EDBB2963F9AD009F21C9 /* FilmPoster.swift */; };
@@ -41,6 +48,11 @@
 		AAAEB9722963F89A007E13BF /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		AAAEB9742963F8BD007E13BF /* Audits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audits.swift; sourceTree = "<group>"; };
 		AAAEB97629640563007E13BF /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		FB8D93EE29653FED0045E298 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		FB8D93F029654B750045E298 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB8D93F7296558930045E298 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		FB8D93F9296568F70045E298 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		FB8D93FB296569300045E298 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
 		FBC2EDB72963EC58009F21C9 /* FilmDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetails.swift; sourceTree = "<group>"; };
 		FBC2EDB92963EE26009F21C9 /* PeopleName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleName.swift; sourceTree = "<group>"; };
 		FBC2EDBB2963F9AD009F21C9 /* FilmPoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPoster.swift; sourceTree = "<group>"; };
@@ -53,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8D93F429654EC80045E298 /* FirebaseFirestore in Frameworks */,
+				FB8D93F629654EC80045E298 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,7 @@
 				AA50ED662963E94600BC26F0 /* ViewController */,
 				AA50ED652963E94300BC26F0 /* View */,
 				635A19F528F9603A00197BCC /* Info.plist */,
+				FB8D93F029654B750045E298 /* GoogleService-Info.plist */,
 			);
 			path = BoxOffice;
 			sourceTree = "<group>";
@@ -98,6 +113,7 @@
 				AAAEB9722963F89A007E13BF /* Genres.swift */,
 				AAAEB9742963F8BD007E13BF /* Audits.swift */,
 				FBC2EDBB2963F9AD009F21C9 /* FilmPoster.swift */,
+				FB8D93F7296558930045E298 /* Review.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +135,9 @@
 				635A19E928F9603900197BCC /* SceneDelegate.swift */,
 				635A19EB28F9603900197BCC /* MainViewController.swift */,
 				FBC2EDC229641474009F21C9 /* BoxOfficeCollectionViewCell.swift */,
+				FB8D93EE29653FED0045E298 /* ReviewViewController.swift */,
+				FB8D93F9296568F70045E298 /* BaseView.swift */,
+				FB8D93FB296569300045E298 /* RateView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -156,6 +175,10 @@
 			dependencies = (
 			);
 			name = BoxOffice;
+			packageProductDependencies = (
+				FB8D93F329654EC80045E298 /* FirebaseFirestore */,
+				FB8D93F529654EC80045E298 /* FirebaseFirestoreSwift */,
+			);
 			productName = BoxOffice;
 			productReference = 635A19E428F9603900197BCC /* BoxOffice.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +207,9 @@
 				Base,
 			);
 			mainGroup = 635A19DB28F9603900197BCC;
+			packageReferences = (
+				FB8D93F229654EC80045E298 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 635A19E528F9603900197BCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,6 +227,7 @@
 				635A19F428F9603A00197BCC /* LaunchScreen.storyboard in Resources */,
 				635A19F128F9603A00197BCC /* Assets.xcassets in Resources */,
 				635A19EF28F9603900197BCC /* Main.storyboard in Resources */,
+				FB8D93F129654B750045E298 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,12 +240,16 @@
 			files = (
 				AAAEB9732963F89A007E13BF /* Genres.swift in Sources */,
 				AA50ED682963E99400BC26F0 /* DailyBoxOffice.swift in Sources */,
+				FB8D93FC296569300045E298 /* RateView.swift in Sources */,
+				FB8D93EF29653FED0045E298 /* ReviewViewController.swift in Sources */,
+				FB8D93FA296568F70045E298 /* BaseView.swift in Sources */,
 				FBC2EDBC2963F9AD009F21C9 /* FilmPoster.swift in Sources */,
 				635A19EC28F9603900197BCC /* MainViewController.swift in Sources */,
 				AAAEB9752963F8BD007E13BF /* Audits.swift in Sources */,
 				2B667AA12963F0FA00B1FC50 /* NetworkManager.swift in Sources */,
 				FBC2EDBA2963EE26009F21C9 /* PeopleName.swift in Sources */,
 				FBC2EDB82963EC58009F21C9 /* FilmDetails.swift in Sources */,
+				FB8D93F8296558930045E298 /* Review.swift in Sources */,
 				FBC2EDC329641474009F21C9 /* BoxOfficeCollectionViewCell.swift in Sources */,
 				FBC2EDBF2963FA84009F21C9 /* NetworkProtocol.swift in Sources */,
 				635A19E828F9603900197BCC /* AppDelegate.swift in Sources */,
@@ -440,6 +471,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB8D93F229654EC80045E298 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB8D93F329654EC80045E298 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB8D93F229654EC80045E298 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FB8D93F529654EC80045E298 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB8D93F229654EC80045E298 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 635A19DC28F9603900197BCC /* Project object */;
 }
